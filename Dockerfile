@@ -8,7 +8,7 @@ RUN mvn clean install
 FROM openjdk:17-jdk-slim
 WORKDIR /app
 EXPOSE 8080
-COPY --from=build /app/target/assignment.jar
+COPY --from=build /app/target/assignment.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # Set metadata for the image
