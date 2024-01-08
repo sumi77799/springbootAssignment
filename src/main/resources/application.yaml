@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+      logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: springboot360@gmail.com
+    password: azznicphkepnegei
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
